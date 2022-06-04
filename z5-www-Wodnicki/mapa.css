@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .inside{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  background-color: #6EAD4E;
+    width: fit-content;
+    z-index: -2;
+  
+  }
+
+  .maparea{
+    z-index: 0;
+    
+  }
+  
+  
+  
+  
+  body {
+      margin:0;
+      padding:0;
+      font-family:'Times New Roman', Times, serif;
+      font-size:12px;
+      background-color:#64A6D1;
+  }
+  
+  .background-top{
+    top: 0;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    pointer-events: none;
+    background-color: #009a79;
+    background-image: url("landscape.jpg");
+    z-index: -2;
+    
+    background-position:center;
+  }
+  
+  .herb {
+    float: right;
+    background-image: url(powiat_rawski.svg);
+    background-size:70%;
+    background-repeat: no-repeat;
+  
+    position:relative;
+    margin-top: -50px;
+    margin-right: 10%;
+    padding-right:100px;
+    padding-bottom: 200px;
+    background-size: 110%;
+   }
+  
+  
+  
+  
+  h1 {
+    
+  font-family:'Times New Roman', Times, serif;
+    width:80%;
+      padding:10px;
+    padding-left: 5%;
+      text-align:left;
+    height: 100px;
+      color:#000000;
+      margin:0;
+  }
+  .main {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width:90%;
+    height: 500px;
+    padding:0 20px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2F7BF6;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  
+  }
+  ol {
+    list-style-type:none;
+    padding-left:4%;
+    margin:0;
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+  }
+  ol > li {
+    float:left;
+    background-color:#7af59f8b;
+    width:20%;
+    margin-left:1px;
+    border-color: #6EAD4E;
+    border-style: solid;
+    border-width: 2px;
+  
+  }
+  ol > li > ul {
+    width: 15%;
+    position:absolute;
+    list-style-type:none;
+    padding:1px;
+    margin:0;
+    z-index: 1;
+    
+  }
+  
+  ol a {
+    
+    display:block;
+    color:#000;
+    text-decoration:none;
+    padding:2px;
+  }
+  
+  ol > li > ul > li {
+    
+    background-color:#8CD4D1;
+    
+    border-color: #6EAD4E;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 2;
+  }
+  
+  ol > li > ul > li:hover {
+    background-color:#A7C6EB;
+  }
+  
+  ol > li > ul > li:hover a {
+    color:#09C;
+  }
+  ol > li > ul {
+    display:none;
+  }
+  
+  ol > li:hover > ul {
+    display:block;
+  }
+  @media only screen and (max-width:768px) {
+    .menu, .main, ol > li, ol > li> ul, ol > li> ul>li {
+      width:95%;
+    }
+    ol{
+      padding-top: 40px;
+    }
+    .background-top{
+      height: 350px;
+      background-size: cover;
+    }
+    h1{
+      width: 70%;
+      padding-left: 3%;
+    }
+    .herb{
+      position: absolute;
+      background-position: center;
+      background-size: 100%;
+      margin-left: 70%;
+      margin-top: -120px;
+      z-index: -1;
+    }
+    .inside{
+      width: fit-content;
+    }
+
+  }
+  

@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+p{
+  font-size: large;
+}
+
+.inside{
+  margin-top: 70px;
+background-color: #64A6D1;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0;padding-left: 10%; width: 90%; height: 100%; }
+
+
+.Rawa{
+  font-size: 20px;
+  line-height: 1.75em;
+  text-align: justify;
+  width: 100%;
+}
+
+.Biala{
+  
+  font-size: 20px;
+  line-height: 1.75em;
+  text-align: justify;
+  width: 100%;
+}
+
+.muzeum{
+  margin-left: 5%;
+  float:right;
+  width: 45%;
+}
+.zamek{
+  margin-right: 4%;
+  float:left;
+  width: 45%;
+}
+
+
+.kosciol{
+  margin-left: 5%;
+  float:right;
+  width: 45%;
+}
+
+.palacbiala{
+  margin-right: 5%;
+  float:left;
+  width: 45%;
+}
+
+
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family:'Times New Roman', Times, serif;
+	font-size:12px;
+	background-color:#2AA8A3;
+}
+
+.background-top{
+  top: 0;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  pointer-events: none;
+  background-color: #009a79;
+  background-image: url("landscape.jpg");
+  z-index: -2;
+  
+  background-position:center;
+}
+
+.herb {
+  float: right;
+  background-image: url(powiat_rawski.svg);
+  background-size:70%;
+  background-repeat: no-repeat;
+
+  position:relative;
+  margin-top: -50px;
+  margin-right: 10%;
+  padding-right:100px;
+  padding-bottom: 200px;
+  background-size: 110%;
+ }
+
+ .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #2F7BF6;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+
+}
+
+h1 {
+  font-family:'Times New Roman', Times, serif;
+  width:80%;
+	padding:10px;
+  padding-left: 5%;
+	text-align:left;
+  height: 100px;
+	color:#000000;
+	margin:0;
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:90%;
+  height: 500px;
+  padding:20px;
+}
+ol {
+  list-style-type:none;
+  padding-left:4%;
+  margin:0;
+  font-size:18px;
+  height:2em;
+  line-height:2em;
+  text-align:center;
+  z-index: 1;
+}
+ol > li {
+  float:left;
+  background-color:#7af59f8b;
+  width:20%;
+  margin-left:1px;
+  border-color: #6EAD4E;
+  border-style: solid;
+  border-width: 2px;
+
+}
+ol > li > ul {
+  width: 15%;
+  position:absolute;
+  list-style-type:none;
+  padding:1px;
+  margin:0;
+  z-index: 1;
+  
+}
+
+ol a {
+  
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:2px;
+}
+
+ol > li > ul > li {
+  
+  background-color:#8CD4D1;
+  
+  border-color: #6EAD4E;
+  border-style: solid;
+  border-width: 1px;
+}
+
+ol > li > ul > li:hover {
+  background-color:#A7C6EB;
+}
+
+ol > li > ul > li:hover a {
+  color:#09C;
+}
+ol > li > ul {
+  display:none;
+}
+
+ol > li:hover > ul {
+  animation:fade-icon-close 0.3s;
+  display:block;
+}
+@media only screen and (max-width:768px) {
+  .menu, .main, ol > li, ol > li> ul, ol > li> ul>li {
+    width:95%;
+  }
+  ol{
+    padding-top: 40px;
+  }
+  .background-top{
+    height: 350px;
+    background-size: cover;
+  }
+  h1{
+    width: 70%;
+    padding-left: 3%;
+  }
+
+  .main{
+    margin:1%;
+    width: 98%;
+  }
+  .inside{
+    width: 100%;
+    margin-top: 7%;
+      padding-top: 1%;
+      padding-bottom: 2%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+  .muzeum{
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .zamek{
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  
+  .kosciol{
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .palacbiala{
+    padding: 5%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .herb{
+    position: absolute;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 70%;
+    margin-top: -120px;
+    z-index: -1;
+  }
+}
+
+
+
+
+
+@keyframes fade-icon-close {
+	0%		{opacity:0;}
+	100%	{opacity:1;}
+}
